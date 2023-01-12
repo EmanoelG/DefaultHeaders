@@ -6,6 +6,7 @@
 	"mainsrc": "./",
 	"projects": [],
 	"dependencies": {
-		"https://github.com/emanoelg/horse": ">0.0.0",
+		"github.com/hashload/horse": "^3.0.2",
+		"https://github.com/emanoelg/horse": ">0.0.0"
 	}
 }

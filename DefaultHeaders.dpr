@@ -1,30 +1,36 @@
-program DefaultHeaders;
-
-{$APPTYPE CONSOLE}
-
+package DefaultHeaders;
 {$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
 
-uses
-  System.SysUtils,
-  horse.defaultheader in 'src\horse.defaultheader.pas',
-  System.JSON,
-  Horse;
+requires
+  rtl;
 
-var
-  defaultHead: TDefaultHeader;
-begin
-  defaultHead.Headers := TJSONArray.Create(TJSONObject.Create(TJSONPair.Create('X-GitHub', 'github.com/EmanoelG')));
+contains
+  horse.defaultheader in 'src\horse.defaultheader.pas';
 
-  defaultHead.name_version := 'appversion';
-  defaultHead.version_server := 'AppVersion(V1.0.0)- Release';
-  THorse.Use(HorseDefaultHeader(defaultHead));
-
-  THorse.Get('/ping',
-    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-    begin
-      Res.Send('pong');
-    end);
-
-  THorse.Listen(9000);
 end.
-
