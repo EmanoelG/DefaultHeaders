@@ -1,0 +1,11 @@
+{
+	"name": "horse-defaultHeader",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"https://github.com/emanoelg/horse": ">0.0.0",
+	}
+}

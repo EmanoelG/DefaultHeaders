@@ -1,0 +1,22 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2023-01-12T08:38:09.7443858-03:00",
+	"installedModules": {
+		"github.com/hashload/horse": {
+			"name": "horse",
+			"version": "3.0.2",
+			"hash": "ffa3cc51144e77884111b23666223fa7",
+			"artifacts": {},
+			"failed": false,
+			"changed": true
+		},
+		"https://github.com/emanoelg/horse": {
+			"name": "horse",
+			"version": "master",
+			"hash": "7739cb90b430881c85e638c0a9cc7a3d",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}
