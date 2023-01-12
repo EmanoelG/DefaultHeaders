@@ -1,6 +1,6 @@
-**/modules/
-**/dist/
-**/static/
+modules/
+dist/
+static/
 **/Win32/
 **/Win64/
 **/Linux64/
@@ -32,7 +32,25 @@ src/*.~*
 *.dsk
 *.dcu
 *.exe
+*.ico
 *.so
+*.~*
+*.a
+*.stat
+*.skincfg
+
+# Mac
+*.DS_Store
+
+#FPC/Laz
+lib/
+backup/
+
+# Code coverage reports
+**/console/
+**/vcl/
+dunitx-results.xml
+*.bak
 *.~*
 *.a
 *.stat
