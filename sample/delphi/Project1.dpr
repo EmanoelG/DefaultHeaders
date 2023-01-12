@@ -8,7 +8,8 @@ uses
   System.SysUtils,
   horse.defaultheader in 'src\horse.defaultheader.pas',
   System.JSON,
-  Horse;
+  Horse,
+  horse.defaultheader;
 
 var
   defaultHead: TDefaultHeader;

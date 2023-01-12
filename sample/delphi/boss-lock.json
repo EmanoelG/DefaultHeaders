@@ -9,6 +9,22 @@
 			"artifacts": {},
 			"failed": false,
 			"changed": false
+		},
+		"https://github.com/emanoelg/defaultheaders": {
+			"name": "defaultheaders",
+			"version": "master",
+			"hash": "04064de61cf28827eeb8d4924b11b02d",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/emanoelg/horse": {
+			"name": "horse",
+			"version": "master",
+			"hash": "b376d71fd8432ea98c2c5f4886b14e79",
+			"artifacts": {},
+			"failed": false,
+			"changed": true
 		}
 	}
 }
