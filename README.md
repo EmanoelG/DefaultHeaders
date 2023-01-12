@@ -18,6 +18,8 @@ Middleware para o frameWork Horse - DefaultHeaders é possível definir os cabe�
     var
       defaultHead: TDefaultHeader;
     begin
+    
+      // Para adicionar mais de um reader, basta passar um ArrayJson para a propriedade Headers.
       defaultHead.Headers := TJSONArray.Create(TJSONObject.Create(TJSONPair.Create('X-GitHub', 'github.com/EmanoelG')));
 
       defaultHead.name_version := 'appversion';
