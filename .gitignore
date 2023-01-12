@@ -1,3 +1,4 @@
+*.json
 **/modules/
 **/dist/
 **/static/
