@@ -1,4 +1,4 @@
-unit Horse.defaultheader;
+unit horse.defaultheader;
 {$IF DEFINED(FPC)}
 {$MODE DELPHI}{$H+}
 {$ENDIF}

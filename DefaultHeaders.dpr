@@ -1,4 +1,5 @@
 package DefaultHeaders;
+
 {$R *.res}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
@@ -33,4 +34,6 @@ requires
 contains
   horse.defaultheader in 'src\horse.defaultheader.pas';
 
+
 end.
+

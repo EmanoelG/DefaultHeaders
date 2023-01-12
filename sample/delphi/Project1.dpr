@@ -6,10 +6,9 @@ program Project1;
 
 uses
   System.SysUtils,
-  horse.defaultheader in 'src\horse.defaultheader.pas',
   System.JSON,
   Horse,
-  horse.defaultheader;
+  Horse.defaultheader;
 
 var
   defaultHead: TDefaultHeader;
